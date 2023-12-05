@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import HelloWorld from './HelloWorld';
+import Counter from './Counter';
 import FilteredList from './FilteredList';
 
 const produce = [
@@ -19,11 +21,14 @@ const produce = [
 
 class App extends Component {
   render() {
-    return (
-      <div className="App">
-        <FilteredList items={produce} />
-      </div>
-    );
+      return (
+          <div className="App">
+              <HelloWorld name={'Deny'} />
+              <Counter />
+              <FilteredList items={produce} />
+
+          </div>
+      );
   }
 }
 
